@@ -4,7 +4,7 @@ import torch
 import os
 
 # تحميل النموذج من Hugging Face
-model_name = "silma-ai/SILMA-Kashif-2B-Instruct-v1.0"  # استبدل باسم النموذج الفعلي على Hugging Face
+model_name = "bigscience/bloom"  # استبدل باسم النموذج الفعلي على Hugging Face
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
 
