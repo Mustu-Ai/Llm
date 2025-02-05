@@ -9,7 +9,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
 # تهيئة بوت Telegram
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")  # الحصول على التوكن من متغيرات البيئة
+TELEGRAM_BOT_TOKEN = '8098049763:AAH-20VbteLPQX5pIf4Z-lYP1N5gk9b-eWY'  # الحصول على التوكن من متغيرات البيئة
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
 
 # أمر البدء
