@@ -4,7 +4,7 @@ import torch
 import os
 
 # تحميل النموذج من Hugging Face
-model_name = "deepseek-ai/DeepSeek-R1"  # استبدل باسم النموذج الفعلي على Hugging Face
+model_name = "distilbert/distilbert-base-cased-distilled-squad"  # استبدل باسم النموذج الفعلي على Hugging Face
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
