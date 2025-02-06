@@ -1,12 +1,12 @@
 import telebot
-from transformers import AutoModel, AutoTokenizer
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 import torch
 import os
 
 # تحميل النموذج من Hugging Face
 model_name = "bigscience/bloom"  # استبدل باسم النموذج الفعلي على Hugging Face
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModel.from_pretrained(model_name)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
 # تهيئة بوت Telegram
 TELEGRAM_BOT_TOKEN = '8098049763:AAH-20VbteLPQX5pIf4Z-lYP1N5gk9b-eWY'  # الحصول على التوكن من متغيرات البيئة
